@@ -1,24 +1,31 @@
 {
-  "name": "github2data",
-  "version": "0.5.0",
-  "description": "A Github webhook that runs bioinformatics pipelines upon a push event",
-  "main": "github2data.js",
-  "scripts": {
-    "github2data": "node github2data.js"
-  },
-  "keywords": [
-    "github",
-    "webhooks",
-    "bionformatics",
-    "pipelines"
-  ],
-  "author": "André Rendeiro <afrendeiro@gmail.com> (http://andre-rendeiro.me)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/afrendeiro/github2data.git"
-  },
-  "license": "GNUPLv2",
-  "dependencies": {
-    "github-webhook-handler": "~0.5.0"
-  }
+    "name": "github2data",
+    "version": "0.0.5",
+    "description": "A Github webhook that runs bioinformatics pipelines upon a push event",
+    "author": "André Rendeiro",
+    "contributions": [{
+        "name": "André Rendeiro",
+        "email": "afrendeiro@gmail.com"
+    }],
+    "preferGlobal": true,
+    "bin": {
+        "github2data": "github2data.js"
+    },
+    "scripts": {
+        "start": "node github2data.js"
+    },
+    "keywords": [
+        "github",
+        "webhooks",
+        "bionformatics",
+        "pipelines"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/afrendeiro/github2data.git"
+    },
+    "license": "GNUPLv2",
+    "dependencies": {
+        "github-webhook-handler": "~0.5.0"
+    }
 }

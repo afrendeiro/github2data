@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // 4 things to edit:
 // add here your github repo name (should match the project name to be run)
 var projectName = 'name'
