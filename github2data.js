@@ -13,19 +13,18 @@ var secret = ''
 
 // don't edit below!
 function runPipelines(projectName, metadata) {
-    var exec = require('child_process').exec, child;
-    var cmd = 'pipelines ' + projectName + ' ' + metadata;
+    var exec = require('child_process').exec
+    var cmd = 'pipelines ' + projectName + ' ' + metadata
 
-    child = exec(
-            cmd,
-            function (error, stdout, stderr) {
-                    console.log('stdout: ' + stdout);
-                    console.log('stderr: ' + stderr);
-                    if (error !== null) {
-                             console.log('exec error: ' + error);
-                    }
-            });
-     child();
+    exec(
+        cmd,
+        function (error, stdout, stderr) {
+                console.log('stdout: ' + stdout)
+                console.log('stderr: ' + stderr)
+                if (error !== null) {
+                         console.log('exec error: ' + error)
+                }
+        })
 }
 
 var http = require('http')
